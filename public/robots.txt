@@ -1,0 +1,8 @@
+# robots.txt for https://saracarvia.com
+
+User-agent: *
+Disallow: /cdn-cgi/
+Allow: /
+
+# Sitemaps
+Sitemap: https://saracarvia.com/sitemap-index.xml 
