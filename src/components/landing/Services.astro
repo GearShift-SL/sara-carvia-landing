@@ -1,0 +1,231 @@
+---
+import plantRoots from '@/assets/svg/plant-roots-svgrepo-com.svg?raw';
+import teacher from '@/assets/svg/teacher-svgrepo-com.svg?raw';
+import speechBubbles from '@/assets/svg/two-overlapping-speech-bubbles-svgrepo-com.svg?raw';
+import clipboard from '@/assets/svg/clipboard-text-alt-svgrepo-com.svg?raw';
+import strongMan from '@/assets/svg/strong-man-silhouette-with-weight-svgrepo-com.svg?raw';
+---
+
+<div class="max-w-7xl mx-auto px-4">
+    <!-- Two Column Layout -->
+    <div class="flex flex-col md:flex-row gap-8">
+        <!-- Left Column: Title + Cards -->
+        <div class="md:w-1/2 flex flex-col gap-8">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 font-recoleta">
+                ¿Cómo te puedo ayudar?
+            </h2>
+            
+        <!-- Service 1: Sana Desde la Raíz -->
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col md:flex-row items-center md:items-center gap-4 mb-6">
+            <div class="shrink-0 w-12 h-12 svg-icon" set:html={plantRoots} />
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 font-recoleta text-center md:text-left">
+                Sana Desde la Raíz
+            </h3>
+        </div>
+        <p class="text-base md:text-lg text-gray-700 mb-4">
+                Es para ti si tienes algún tipo de <strong>patología digestiva o autoinmune</strong>, no has conseguido encontrar la causa o no estás viendo resultados en tu proceso y necesitas ayuda a nivel alimentación, hábitos, gestión emocional, …
+            </p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-6">
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Análisis de tu caso, síntomas, pruebas diagnósticas, …</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Valoración inicial con abordaje integral.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Asesoramiento 100% online.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Implementación de hábitos saludables.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Abordaje de otros factores que pueden estar afectando.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Evaluación semanal del progreso.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Contacto diario personalizado.</span>
+            </div>
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-lg transition-colors duration-300 text-center"
+                style="background-color: #A8D5BA;"
+                onmouseover="this.style.backgroundColor='#8BC6A8'"
+                onmouseout="this.style.backgroundColor='#A8D5BA'"
+            >
+                Encuentra tu solución
+            </a>
+        </div>
+
+    <!-- Service 2: Coaching by Sara -->
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col md:flex-row items-center md:items-center gap-4 mb-6">
+            <div class="shrink-0 w-12 h-12 svg-icon svg-icon-teacher" set:html={teacher} />
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 font-recoleta text-center md:text-left">
+                Coaching by Sara
+            </h3>
+        </div>
+        <p class="text-base md:text-lg text-gray-700 mb-4">
+                Es para ti si estás buscando un <strong>cambio físico, mental y de tu estilo de vida</strong>, 100% personalizado y adaptado a tus circunstancias y necesitas que te acompañe durante el camino hasta que puedas hacerlo por ti mismo.
+            </p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-6">
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Valoración inicial de tu caso y objetivos.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Asesoramiento 100% online.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Plan de entrenamiento personalizado y adaptado a tus objetivos.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Plan nutricional personalizado y complementario al plan de entrenamiento.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Evaluación semanal del progreso.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Contacto diario personalizado.</span>
+            </div>
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-lg transition-colors duration-300 text-center"
+                style="background-color: #B8A8D5;"
+                onmouseover="this.style.backgroundColor='#A68BC6'"
+                onmouseout="this.style.backgroundColor='#B8A8D5'"
+            >
+                Empieza tu transformación
+            </a>
+        </div>
+        </div>
+
+        <!-- Right Column: More Services Cards -->
+        <div class="md:w-1/2 flex flex-col gap-8">
+    <!-- Service 3: Asesoría 1:1 -->
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col md:flex-row items-center md:items-center gap-4 mb-6">
+            <div class="shrink-0 w-12 h-12 svg-icon svg-icon-speech" set:html={speechBubbles} />
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 font-recoleta text-center md:text-left">
+                Asesoría 1:1
+            </h3>
+        </div>
+        <p class="text-base md:text-lg text-gray-700 mb-4">
+                Es para ti si quieres <strong>evaluar tu estado actual, definir tus objetivos y diseñar un plan de acción</strong> personalizado sin necesidad de un acompañamiento continuo, optimizando así tu rutina de entrenamiento y tus hábitos de alimentación.
+            </p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-6">
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Videollamada de 1 hora.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Valoración de tu caso y situación actual.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Creación de objetivos a corto y medio plazo.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Elaboración de un plan de acción.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Resolución de dudas en 1 mensaje hasta 48 horas después de la asesoría.</span>
+            </div>
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-lg transition-colors duration-300 text-center"
+                style="background-color: #F5B7B1;"
+                onmouseover="this.style.backgroundColor='#F1948A'"
+                onmouseout="this.style.backgroundColor='#F5B7B1'"
+            >
+                Reserva tu asesoría
+            </a>
+        </div>
+
+    <!-- Service 4: Plan básico -->
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col md:flex-row items-center md:items-center gap-4 mb-6">
+            <div class="shrink-0 w-12 h-12 svg-icon svg-icon-clipboard" set:html={clipboard} />
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 font-recoleta text-center md:text-left">
+                Plan básico
+            </h3>
+        </div>
+        <p class="text-base md:text-lg text-gray-700 mb-4">
+                Es para ti si quieres simplemente un <strong>plan de entrenamiento y nutrición 100% personalizado</strong> y adaptado a tus circunstancias.
+            </p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-6">
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Valoración inicial a través de un cuestionario.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Plan de entrenamiento personalizado y adaptado a tus objetivos.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Plan nutricional personalizado y adaptado al plan de entrenamiento.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Resolución de dudas en 1 mensaje hasta 24 horas después de la entrega del plan.</span>
+            </div>
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-lg transition-colors duration-300 text-center"
+                style="background-color: #F9D689;"
+                onmouseover="this.style.backgroundColor='#F5C96B'"
+                onmouseout="this.style.backgroundColor='#F9D689'"
+            >
+                Obtén tu plan
+            </a>
+        </div>
+
+    <!-- Service 5: Coach My Life -->
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col md:flex-row items-center md:items-center gap-4 mb-6">
+            <div class="shrink-0 w-12 h-12 svg-icon svg-icon-strongman" set:html={strongMan} />
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 font-recoleta text-center md:text-left">
+                Coach My Life
+            </h3>
+        </div>
+        <p class="text-base md:text-lg text-gray-700 mb-4">
+                Es para ti si has probado todo tipo de entrenamientos y dietas y ninguna te ha funcionado; si eres una persona ocupada que quiere aprender a cuidar de su salud; si te gustaría <strong>aprender a hacer tus propios planes sin depender de nadie más</strong>; y sobre todo, si te gustaría cambiar tu vida ahora mismo y para siempre.
+            </p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-6">
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Programa de 90 días en el que aprenderás conceptos básicos de entrenamiento, nutrición y otros ámbitos de la salud.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Clases grabadas en vídeo con todo el contenido teórico.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Masterclass en directo con otros profesionales de la salud.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Materiales complementarios al contenido teórico.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Sesiones grupales de dudas en directo.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Primer plan personalizado de entrenamiento y de nutrición para empezar tu cambio.</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm">Acceso a la comunidad de WhatsApp con el resto de alumnos de la formación y con Sara Carvia.</span>
+            </div>
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-lg transition-colors duration-300 text-center w-full md:w-auto"
+                style="background-color: #A8C5E0;"
+                onmouseover="this.style.backgroundColor='#8FB2D4'"
+                onmouseout="this.style.backgroundColor='#A8C5E0'"
+            >
+                Únete al programa
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<style>
+	.svg-icon :global(svg) {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.svg-icon :global(path) {
+		fill: #A8D5BA;
+		transition: fill 0.3s ease;
+	}
+	
+	.svg-icon:hover :global(path) {
+		fill: #8BC6A8;
+	}
+	
+	/* Teacher icon uses stroke instead of fill */
+	.svg-icon-teacher :global(path) {
+		fill: none !important;
+		stroke: #B8A8D5;
+		transition: stroke 0.3s ease;
+	}
+	
+	.svg-icon-teacher:hover :global(path) {
+		fill: none !important;
+		stroke: #A68BC6;
+	}
+	
+	/* Speech bubbles icon */
+	.svg-icon-speech :global(path) {
+		fill: #F5B7B1;
+		transition: fill 0.3s ease;
+	}
+	
+	.svg-icon-speech:hover :global(path) {
+		fill: #F1948A;
+	}
+	
+	/* Clipboard icon uses stroke instead of fill */
+	.svg-icon-clipboard :global(path) {
+		fill: none !important;
+		stroke: #F9D689;
+		transition: stroke 0.3s ease;
+	}
+	
+	.svg-icon-clipboard:hover :global(path) {
+		fill: none !important;
+		stroke: #F5C96B;
+	}
+	
+	/* Strong man icon */
+	.svg-icon-strongman :global(path) {
+		fill: #A8C5E0;
+		transition: fill 0.3s ease;
+	}
+	
+	.svg-icon-strongman:hover :global(path) {
+		fill: #8FB2D4;
+	}
+</style>

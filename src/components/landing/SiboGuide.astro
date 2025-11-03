@@ -1,0 +1,135 @@
+---
+import { Image } from 'astro:assets';
+import logoSibo from '@/assets/images/logo-sibo.png';
+---
+
+<div class="max-w-6xl mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-recoleta">
+            Guía Completa para SIBO
+        </h2>
+        <p class="text-2xl md:text-3xl font-semibold text-[#A8D5BA] mb-8">
+            50,00 €
+        </p>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <!-- Product Image and Introduction -->
+        <div class="flex flex-col md:flex-row gap-8 mb-10">
+            <!-- Image -->
+            <div class="md:w-1/3 flex-shrink-0">
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <Image 
+                        src={logoSibo} 
+                        alt="Guía Completa para SIBO" 
+                        class="w-full h-auto object-cover"
+                        quality={90}
+                    />
+                </div>
+            </div>
+            
+            <!-- Introduction -->
+            <div class="md:w-2/3">
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    He creado esta guía pensando en ti, para acompañarte en este proceso que puede ser tan confuso y agotador. 
+                    Encontrarás <strong>6 módulos en vídeo</strong> donde te explico todo sobre el SIBO, un <strong>workbook</strong> para 
+                    que puedas hacer un seguimiento detallado de tus síntomas y avances, y un <strong>ebook de recetas</strong> adaptadas. 
+                    Es el mismo método que utilizo con todas las personas con las que trabajo y que me ha ayudado a mí misma a recuperar 
+                    mi salud. Juntos, podemos dar un poco de luz a este camino y hacerlo más llevadero.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personal Touch Section -->
+        <div class="bg-gray-50 rounded-xl p-6 md:p-8 mb-10">
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                Si has llegado hasta aquí, probablemente estés lidiando con algo que parece un laberinto sin salida: 
+                molestias constantes, información contradictoria, profesionales que no terminan de ofrecerte soluciones claras… 
+                <strong>Lo sé porque yo también estuve ahí.</strong>
+            </p>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                Esta guía está diseñada para ser tu mapa y tu apoyo. A lo largo de seis módulos en vídeo, te explico 
+                desde los conceptos básicos hasta los pasos concretos para gestionar el SIBO: cómo identificar los tipos, 
+                el tratamiento adecuado, pautas de alimentación y estilo de vida que realmente funcionan.
+            </p>
+        </div>
+
+        <!-- What's Included -->
+        <div class="mb-10">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 font-recoleta">
+                ¿Qué incluye?
+            </h3>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="shrink-0 w-6 h-6 rounded-full bg-[#A8D5BA] flex items-center justify-center mt-1">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-base md:text-lg text-gray-700">
+                        <strong>6 módulos en vídeo</strong> con explicaciones detalladas sobre el SIBO, desde conceptos básicos 
+                        hasta estrategias avanzadas de tratamiento
+                    </p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="shrink-0 w-6 h-6 rounded-full bg-[#A8D5BA] flex items-center justify-center mt-1">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-base md:text-lg text-gray-700">
+                        <strong>Workbook personalizado</strong> para seguir tus síntomas y avances de forma organizada
+                    </p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="shrink-0 w-6 h-6 rounded-full bg-[#A8D5BA] flex items-center justify-center mt-1">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-base md:text-lg text-gray-700">
+                        <strong>Ebook de recetas</strong> adaptadas y deliciosas para facilitar tu alimentación
+                    </p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="shrink-0 w-6 h-6 rounded-full bg-[#A8D5BA] flex items-center justify-center mt-1">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-base md:text-lg text-gray-700">
+                        Basado en <strong>años de experiencia personal, formación profesional</strong> y trabajo con personas como tú
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Closing Message -->
+        <div class="bg-gradient-to-br from-[#A8D5BA]/10 to-[#B8A8D5]/10 rounded-xl p-6 md:p-8 mb-8">
+            <p class="text-lg md:text-xl text-gray-800 leading-relaxed text-center font-medium">
+                No estás solo en esto. Mi intención es darte las herramientas necesarias para que 
+                tomes las riendas de tu salud y recuperes tu bienestar.
+            </p>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center">
+            <a 
+                href="#contacto" 
+                class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gray-800 rounded-lg shadow-md transition-all duration-300 hover:bg-gray-900 hover:shadow-xl hover:scale-105"
+            >
+                Consigue tu guía ahora
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Add smooth transitions */
+    .bg-white {
+        transition: box-shadow 0.3s ease;
+    }
+</style>
+

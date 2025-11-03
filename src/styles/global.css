@@ -3,9 +3,54 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Elza Font Face Declarations */
+@font-face {
+  font-family: "Elza";
+  src: url("/fonts/fonnts.com-Elza.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elza";
+  src: url("/fonts/fonnts.com-Elza_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elza";
+  src: url("/fonts/fonnts.com-Elza_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Recoleta Font Face Declarations */
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/09167ab604ebbfb1e7b6328321baf783.eot");
+  src:
+    url("/fonts/09167ab604ebbfb1e7b6328321baf783.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/09167ab604ebbfb1e7b6328321baf783.woff") format("woff"),
+    url("/fonts/09167ab604ebbfb1e7b6328321baf783.woff2") format("woff2"),
+    url("/fonts/09167ab604ebbfb1e7b6328321baf783.ttf") format("truetype"),
+    url("/fonts/09167ab604ebbfb1e7b6328321baf783.svg#Recoleta Medium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  /* Replace the tailwind sans font with Inter Variable */
-  --font-sans: "Inter Variable", sans-serif;
+  /* Replace the tailwind sans font with Elza */
+  --font-sans: "Elza", sans-serif;
+
+  /* Add Recoleta as a custom font family */
+  --font-recoleta: "Recoleta", serif;
 
   /* Custom colors */
   --color-primary: #01a9f0;
@@ -13,6 +58,11 @@
   --color-default: rgb(16 16 16);
   --color-muted: rgb(16 16 16 / 66%);
   --color-page: rgb(255 255 255);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
 }
 
 .dark {

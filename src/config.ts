@@ -21,15 +21,16 @@ type SiteConfig = {
 
 // Main site configuration, this will be used as the default metadata for the site
 export const SITE: SiteConfig = {
-  title: "Astro Project",
-  description: "Astro Project",
-  author: "Astro",
-  siteUrl: "https://astro.build",
+  title: "Sara Carvia",
+  description: "Nutricionista y Coach de Nutrición Funcional",
+  author: "Sara Carvia",
+  siteUrl: "https://saracarvia.com",
   logo: "/src/assets/images/logo.png", // Path to logo image
   header: {
     links: [
-      { href: "/blog/", text: "Blog" },
-      { href: "/about/", text: "About" },
+      { href: "/#servicios", text: "Servicios" },
+      { href: "/#guia-sibo", text: "Guía SIBO" },
+      { href: "/#transformaciones", text: "Transformaciones" },
     ],
   },
   footer: {
@@ -38,30 +39,19 @@ export const SITE: SiteConfig = {
   ogImage: "/src/assets/images/og-image.png", // Needs to be an absolute path /src/...
   locale: "es",
   twitter: {
-    site: "@astrobuild",
+    site: "@saracarvia",
   },
 };
 
 export const socialLinks = [
   {
-    name: "GitHub",
-    url: "https://github.com/astrobuild",
+    name: "Instagram",
+    url: "https://instagram.com/saracarvia",
     target: "_blank",
-    // rel: 'noopener',
-    icon: "tabler:brand-github",
   },
   {
-    name: "X",
-    url: "https://x.com/astrobuild",
+    name: "WhatsApp",
+    url: "https://wa.me/34XXXXXXXXX", // Replace with your WhatsApp number
     target: "_blank",
-    // rel: 'noopener',
-    icon: "tabler:brand-x",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://linkedin.com/in/astrobuild",
-    target: "_blank",
-    // rel: 'noopener',
-    icon: "tabler:brand-linkedin",
   },
 ];

@@ -1,10 +1,29 @@
 ---
 import PageLayout from '@/layouts/PageLayout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '@/components/landing/Hero.astro';
+import Services from '@/components/landing/Services.astro';
+import SiboGuide from '@/components/landing/SiboGuide.astro';
+import Transformations from '@/components/landing/Transformations.astro';
 ---
 
 <PageLayout>
-	Hello World
+	<section class="w-full min-h-[calc(100vh-4rem)] md:min-h-auto flex items-center py-8 md:py-12">
+		<Hero />
+	</section>
+
+	<!-- Services Section -->
+	<section id="servicios" class="w-full py-16 md:py-24 bg-gray-50">
+		<Services />
+	</section>
+
+	<!-- SIBO Guide Section -->
+	<section id="guia-sibo" class="w-full py-16 md:py-24 bg-white">
+		<SiboGuide />
+	</section>
+
+	<!-- Transformations section -->
+	<section id="transformaciones" class="w-full py-16 md:py-24 bg-gray-50">
+		<Transformations />
+	</section>
 </PageLayout>
+
