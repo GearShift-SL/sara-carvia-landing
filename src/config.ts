@@ -21,15 +21,14 @@ type SiteConfig = {
 
 // Main site configuration, this will be used as the default metadata for the site
 export const SITE: SiteConfig = {
-  title: "Daniel García",
-  description: "Personal Blog",
-  author: "Daniel García",
-  siteUrl: "https://daniel.es",
+  title: "Astro Project",
+  description: "Astro Project",
+  author: "Astro",
+  siteUrl: "https://astro.build",
   header: {
     links: [
       { href: "/blog/", text: "Blog" },
-      { href: "/projects/", text: "Projects" },
-      { href: "/about/", text: "About me" },
+      { href: "/about/", text: "About" },
     ],
   },
   footer: {
@@ -38,37 +37,30 @@ export const SITE: SiteConfig = {
   ogImage: "/src/assets/images/og-image.png", // Needs to be an absolute path /src/...
   locale: "es",
   twitter: {
-    site: "@onticdani",
+    site: "@astrobuild",
   },
 };
 
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/dontic",
+    url: "https://github.com/astrobuild",
     target: "_blank",
     // rel: 'noopener',
     icon: "tabler:brand-github",
   },
   {
     name: "X",
-    url: "https://x.com/onticdani",
+    url: "https://x.com/astrobuild",
     target: "_blank",
     // rel: 'noopener',
     icon: "tabler:brand-x",
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/gsdaniel",
+    url: "https://linkedin.com/in/astrobuild",
     target: "_blank",
     // rel: 'noopener',
     icon: "tabler:brand-linkedin",
-  },
-  {
-    name: "Mastodon",
-    url: "https://mastodon.social/@onticdani",
-    target: "_blank",
-    rel: "me",
-    icon: "tabler:brand-mastodon",
   },
 ];
