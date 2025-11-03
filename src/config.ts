@@ -25,6 +25,7 @@ export const SITE: SiteConfig = {
   description: "Astro Project",
   author: "Astro",
   siteUrl: "https://astro.build",
+  logo: "/src/assets/images/logo.png", // Path to logo image
   header: {
     links: [
       { href: "/blog/", text: "Blog" },

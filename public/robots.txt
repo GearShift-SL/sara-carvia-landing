@@ -1,8 +1,8 @@
-# robots.txt for https://astro.build
+# robots.txt for https://saravarvia.com
 
 User-agent: *
 Disallow: /cdn-cgi/
 Allow: /
 
 # Sitemaps
-Sitemap: https://astro.build/sitemap-index.xml 
+Sitemap: https://saracarvia.com/sitemap-index.xml 
