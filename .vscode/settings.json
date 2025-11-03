@@ -1,0 +1,7 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[mdx]": {
+    "editor.wordWrap": "on"
+  },
+  "svg.preview.background": "custom"
+}
