@@ -55,5 +55,44 @@ import signature from '@/assets/svg/signature.svg';
 	<section id="transformaciones" class="w-full py-16 md:py-24 bg-gray-50">
 		<Transformations />
 	</section>
+
+	<!-- Floating CTA Button -->
+	<div id="floating-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 opacity-0 invisible transition-all duration-300 pointer-events-none">
+		<a 
+			href="#contacto" 
+			class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 whitespace-nowrap"
+			style="background: linear-gradient(135deg, #FFE2EE 0%, #FFB3D9 50%, #FFE2EE 100%);"
+		>
+			Comienza tu transformación
+		</a>
+	</div>
 </PageLayout>
+
+<script>
+	// Show floating CTA when hero buttons are out of view
+	const floatingCta = document.getElementById('floating-cta');
+	const heroSection = document.querySelector('section');
+	
+	if (floatingCta && heroSection) {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						// Hero is visible - hide floating CTA
+						floatingCta.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+					} else {
+						// Hero is not visible - show floating CTA
+						floatingCta.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+					}
+				});
+			},
+			{
+				threshold: 0.1,
+				rootMargin: '0px'
+			}
+		);
+		
+		observer.observe(heroSection);
+	}
+</script>
 
