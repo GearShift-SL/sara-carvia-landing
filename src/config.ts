@@ -41,6 +41,7 @@ export const SITE: SiteConfig = {
   twitter: {
     site: "@saracarvia",
   },
+  umamiWebsiteId: "03279959-6edd-46e7-8b05-3b007229fb5d",
 };
 
 export const socialLinks = [
