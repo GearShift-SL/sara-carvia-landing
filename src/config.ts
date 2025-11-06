@@ -45,13 +45,18 @@ export const SITE: SiteConfig = {
 
 export const socialLinks = [
   {
+    name: "YouTube",
+    url: "https://youtube.com/@saracarvia",
+    target: "_blank",
+  },
+  {
     name: "Instagram",
     url: "https://instagram.com/saracarvia",
     target: "_blank",
   },
   {
     name: "WhatsApp",
-    url: "https://wa.me/34XXXXXXXXX", // Replace with your WhatsApp number
+    url: "https://wa.link/tfqerf", // Replace with your WhatsApp number
     target: "_blank",
   },
 ];
