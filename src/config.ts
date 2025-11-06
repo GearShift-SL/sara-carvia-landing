@@ -22,7 +22,7 @@ type SiteConfig = {
 // Main site configuration, this will be used as the default metadata for the site
 export const SITE: SiteConfig = {
   title: "Sara Carvia",
-  description: "Nutricionista y Coach de Nutrición Funcional",
+  description: "Coach de Nutrición Funcional y SIBO",
   author: "Sara Carvia",
   siteUrl: "https://saracarvia.com",
   logo: "/src/assets/images/logo.png", // Path to logo image
